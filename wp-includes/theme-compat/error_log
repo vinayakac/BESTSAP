@@ -1,1 +1,0 @@
-[06-Jun-2018 13:21:37 Etc/GMT] PHP Fatal error:  Call to undefined function post_class() in /home/saponline/public_html/wp-includes/theme-compat/embed-content.php on line 13

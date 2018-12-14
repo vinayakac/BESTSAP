@@ -1,3 +1,0 @@
-[27-Nov-2017 16:27:00 Etc/GMT] PHP Fatal error:  Class 'Walker' not found in /home/suvidhamarriage/public_html/sapgtsonline.com/wp-includes/class-walker-nav-menu.php on line 17
-[14-Mar-2018 18:48:50 Etc/GMT] PHP Fatal error:  Class 'Walker' not found in /home/suvidhamarriage/public_html/sapgtsonline.com/wp-includes/class-walker-nav-menu.php on line 17
-[23-Mar-2018 04:26:37 Etc/GMT] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/suvidhamarriage/public_html/sapgtsonline.com/wp-includes/locale.php on line 10

@@ -1,2 +1,0 @@
-[08-Jun-2018 19:44:41 Etc/GMT] PHP Fatal error:  Call to undefined function add_action() in /home/saponline/public_html/wp-content/plugins/hello.php on line 60
-[08-Jun-2018 19:44:43 Etc/GMT] PHP Fatal error:  Call to undefined function add_action() in /home/saponline/public_html/wp-content/plugins/hello.php on line 60
