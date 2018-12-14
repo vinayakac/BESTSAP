@@ -1,0 +1,562 @@
+.memberdeck {
+	.starred {
+		color: #ed5565;
+	}
+	.powered-by {width: auto; text-align: center; margin-top: 10px;
+		a {
+			&.svg-icon {
+				position: relative;
+				display: inline-block; 
+				height: 66px;
+				width: 118px;
+				&::after {
+			  	  content: ""; 
+				  position: absolute;
+				  top: 0;
+				  right: 0;
+				  bottom: 0;
+				  left:0;
+				}
+			}
+		}
+	}
+	// The Big box wrapper
+	.md-box-wrapper {
+		color: $font-color;
+		font-size: $text-size;
+		@include calc(width, 98%, "100% - #{$border-width*2}");
+		padding: 0;
+		margin: 0 auto;
+		font-size: 0;
+		*, *:after, *:before {
+			@include box-sizing(border-box);
+		}
+	}
+	.instant-checkout-note {
+		color: $link-color;
+		width: 75%;
+		max-width: 650px;
+		font-size: $text-size*1.5;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.checkout-header {
+		font-size: $text-size;
+		text-align: center;
+		margin: 10px 0 10px 0;
+		font-weight: 400;
+		color: #38678e;
+	}
+	a {
+		color: darken($link-color, 10%);
+		text-decoration: none;
+		text-transform: none;
+		font-weight: normal;
+			&:hover {
+				color: $link-color;
+				text-decoration: none;
+			}
+		i {
+			color: $text-color;
+			text-decoration: none !important;
+			&:hover {
+				color: $link-color;
+			}
+		}
+	}
+	.inline {
+		display: inline-block;
+		margin: 0;
+	}
+	h2 {
+		&.border-bottom {
+			border-bottom: 1px solid #e7ebed;
+			margin-left: 0;
+			font-size: $text-size;
+			text-transform: uppercase;
+
+		}
+	}
+	p {
+		&.desc-note {
+			color: #90a4ae;
+			margin-left: 0;
+			margin-bottom: 20px;
+			margin-bottom: 26px !important;
+			line-height: 26px;
+		}
+	}
+		a.reveal-login, a.hide-login {
+		display: block;
+		margin: 0 auto 20px auto;
+		width: 30%;
+		padding: 1px 5px;
+		text-align: center;
+		border-radius: 3px;
+		font-size: 90%;
+		text-transform: uppercase;
+		background-color: rgba(255,255,255,.65);
+	}
+	h3.big {
+		font-size: $text-size;
+		line-height: round($text-size * 1.5);
+		font-weight: 400;
+		padding: round($text-size - 4) 0;
+		color: #38678e;
+		text-align: left;
+		border-bottom: 1px solid #e7ebed;
+		margin-bottom: $text-size - 2;
+	}
+	.center {
+		text-align: center;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	span.license {
+		    margin: 0;
+		    cursor: pointer;
+	}
+	.license-display {
+	    margin: 0;
+	    position: absolute;
+	    right: 0;
+	    left: 0;
+	    word-break:break-all;
+	    bottom: 10px;
+	    margin: 0 auto;
+	    width: auto;
+	    max-width: 300px;
+	    height: auto;
+	    text-align: left;
+	    padding: $text-size/2;
+	    font-size: $text-size/1.1 !important;
+	    line-height: $text-size/1.1 !important;;
+	    display: none;
+	    background-color: #fff !important;;
+	    color: #000 !important;;
+	    cursor: text;
+	    z-index: 999;
+	    -webkit-transition: opacity 100ms ease;
+	    opacity: 0;
+	    border: 1px solid #aaa;
+	}
+	.license-display .key {
+		margin-top: 10px !important;
+		display: block;
+		font-size: round($text-size/1.2) !important;
+		background-color: #fff !important;
+	}
+	.components span.license:hover .license-display {
+	    display: block;
+	    opacity: 1;
+	}
+	.expirate_date {
+		display: inline-block;
+		padding: 5px;
+		margin: 8px 10px 8px 0px;
+		background-color: rgba(223, 86, 69, 0.8);
+		font-size: round($text-size/1.4);
+		line-height: round($text-size/1.4);
+		text-align: left;
+		color: #fff;
+		width: auto;
+		&:before {
+			content: '\f06a';
+			font-family: FontAwesome;
+			color: #fff;
+			font-size: round($text-size - 5);
+			float: left;
+			margin: 0 5px 0 0;
+		}
+	}
+	.expirate_date .renew-link {
+		text-decoration: underline;
+		color: #fff;
+		font-size: round($text-size - 5);
+	}
+	// The box. Not really any reason to edit this.
+	.md-box {
+		margin: 0;
+		padding: 0;
+		padding-right: 10px;
+		vertical-align: top;
+		position: relative;
+		// These are to create a full height border between boxes.  .rightborder would actually attach to the left box, and vice versa.
+		&.half {
+			width: 50%;
+			display: inline-block;
+			@include breakpoint(mama-bear) { 
+	  			width: 100%;
+	  		}
+	  		@include breakpoint(baby-bear) { 
+	  			width: 100%;
+	  		}
+		}
+		&.full {
+			width: 100%;
+			display: inline-block;
+			&:first-child {
+				border-top: none;
+			}
+		}
+		&.half-tall {
+			width: 50%;
+			display: block;
+			float: right;
+			@include breakpoint(mama-bear) { 
+	  			width: 100%;
+	  		}
+	  		@include breakpoint(baby-bear) { 
+	  			width: 100%;
+	  		}
+		}
+		li {
+			list-style: none;
+			position: relative;
+			margin: 0;
+		}
+		
+		&.hidden {
+			display: none;
+		}
+		// This is for when an item is marked 'inactive' - when a member does not have access to it. They can still see it, however download and documentation links are stripped.
+		
+		li.inactive {
+			cursor: pointer; 
+			a.inactive-item .title, a.inactive-item .components, a.inactive-item img, a.inactive-item, a.inactive-item .idc-dashboard-download-image {
+				opacity: .6;
+			}
+			&:hover {
+				a.inactive-item .title, a.inactive-item .components, a.inactive-item img, a.inactive-item, a.inactive-item .idc-dashboard-download-image   {
+					opacity: 1;
+				}
+			}
+		}
+		li.inactive .components {
+			margin-bottom: $text-size;
+		}
+		li.inactive button i {
+			display: none;
+		}
+		table {
+			width: 100%;
+		}
+		table th {
+			border-bottom: 1px solid #e7ebed;
+			padding: round($text-size/2);
+			font-size: round($text-size - 2);
+			color: $form-text-color;
+			vertical-align: middle;
+		}
+		table tr:nth-child(1){
+			background-color: transparent !important;
+		}
+		
+		table tr:nth-child(odd){
+			background-color: #eee;
+		}
+		
+		table {
+			td {
+				line-height: $text-size;
+				color: $font-color;
+				font-size: round($text-size - 2);
+				border: 0;
+				padding: round($text-size/2);
+				vertical-align: middle;
+				a {
+					padding-top: 8px;
+					text-align: center;
+					display: block;
+					&.cancel-pledge {
+						float: left;
+					}
+					i {
+						color: $ui-text-color;
+					}
+				}
+			}
+		}
+		table.attachments {
+
+		}
+	}
+	// These are used for dividing content, either visually or invisibly.  It's important to keep these styled otherwise they'll adopt the styling of the theme.
+	hr {
+		height: 10px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background: transparent;
+			&.md-divider {
+				height: 1px;
+				width: 100%;
+				margin: 40px auto 0 auto;
+				padding: 0;
+				border: none;
+				background: $faded-alt-color;
+				clear: both;
+			}
+			&.md-divider-hidden {
+				height: 1px;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				border: none;
+				border-bottom: none;
+				background: transparent;
+				clear: both;
+			}
+	}
+	#idc-downloads button {
+		font-size: round($text-size - 4);
+		display: block;
+	}
+	// The buttons
+	button, input[type="submit"], form .form-row input[type="submit"] {
+		text-align: center;
+		color: #fff;
+		background: $ui-text-color;
+		background-color: $ui-text-color;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: round($text-size - 4);
+		border: 0;
+		padding: round($text-size*.7) round($text-size*1.2);
+		margin: $text-size/2 auto;
+		cursor: pointer;
+		display: block;
+		width: auto;
+		border-radius: 0;
+		box-shadow: none;
+		line-height: 1;
+		i {
+			float: none;
+			font-size: 100%;
+			width: auto;
+		}
+		&:hover {
+			background-color: #249a7a;
+		}
+		&.invert {
+			background: $primary-bg;
+			color: $link-color;
+		}
+		&.invert:hover {
+			background: lighten($primary-bg, 30%);
+			color: darken($link-color, 50%);
+		}
+		&.large {
+			font-size: $text-size*1.5;
+			padding: $text-size/1.5 $text-size*2;
+		}
+		&.mini {
+			font-size: $text-size;
+			padding: round($text-size/2) $text-size*1.5;
+		}
+		&.micro {
+			font-size: round($text-size*.8);
+			padding: round($text-size/2.5) $text-size*1.5;
+		}
+		.md-icon-variable:before {
+			content: "\f01a";
+			font-family: FontAwesome;
+			font-style: normal;
+			margin-left: 0px;
+			margin-right: 5px;
+		}
+		&.processing:before {
+			content: "\f110";
+			font-family: FontAwesome;
+			font-size: inherit;
+			display: inline-block;
+			margin-right: 5px;
+			margin-left: -5px;
+			vertical-align: baseline;
+			-webkit-animation: id-spin 700ms infinite steps(8);
+		}
+
+	}
+
+	/** Extras for IDC **/
+	.idc-terms-checkbox {
+		background-color: rgba(188,188,188,.1);
+		margin-left: 0;
+		padding-left: 29px;
+	    width: 60%;
+	    display: table-cell;
+		vertical-align: middle;
+		height: 40px;
+		border-top: 1px solid #e7ebed;
+		position: relative;
+		@include breakpoint(mama-bear) { 
+	  		height: auto;
+	  	}
+	}
+
+	/* Project Rewards and Attachments */
+
+	table.attachments {
+		th {
+			text-align: left;
+		}
+		tr:nth-child(even) {
+			background-color: transparent;
+		}
+		td a {
+			margin-top: -17px;
+			display: block;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+		a i{
+			color: red;
+			padding-top: $text-size;
+		}
+		a i:hover {
+			color: darkred;
+		}
+	}
+
+	/* Clearfix - add .cf to any container that has floats inside it. */
+
+	/* For modern browsers */
+	&.cf:before,
+	&.cf:after {
+	  content:"";
+	  display:table;
+	}
+	 
+	&.cf:after {
+	clear:both;
+	}
+	 
+	/* For IE 6/7 (triggers hasLayout) */
+	&.cf {
+	  *zoom:1;
+	}
+}
+
+/* Required Login Notification */
+
+.md-requiredlogin{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  &.login-form {
+	background: #fff;
+	border-left: 1px solid #e7ebed;
+	border-right: 1px solid #e7ebed;
+	border-bottom: 1px solid #e7ebed;
+	padding-bottom: 20px;
+	width: 75%;
+	max-width: 650px;
+	margin-bottom: 10px !important;
+	position: relative;
+	overflow: hidden;
+  }
+  #loginform {
+	  background: transparent;
+	  border: none;
+	  margin: 0 auto;
+	  box-shadow: none;
+	  width: 240px;
+	}
+	#loginform p {
+	  margin-bottom: 10px;
+	}
+	#loginform p.login-username label, #loginform p.login-password label {
+		color: $font-color;
+		display: block;
+		font-size: round($text-size - 4);
+		font-weight: 700;
+		text-indent: 3px;
+		vertical-align: text-bottom;
+		padding-left: 8px;
+		padding-bottom: 4px;
+		text-transform: uppercase;
+		text-align: left;
+	}
+	#wp-submit {
+		text-align: center;
+		color: #fff;
+		background: $ui-text-color;
+		background-color: $ui-text-color;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: round($text-size - 4);
+		border: 0;
+		padding: round($text-size*.7) round($text-size*1.2);
+		margin: $text-size/2 auto;
+		cursor: pointer;
+		display: block;
+		width: auto;
+		border-radius: 0;
+		box-shadow: none;
+		line-height: 1;
+		&:hover {
+			background-color: #249a7a;
+		}
+	}
+	.login-remember {
+	  color: $text-color;
+	  text-align: left;
+	  font-size: $text-size/1.2;
+	  margin-bottom: 10px;
+	}
+	a.lostpassword {
+		color: $link-color;
+	  	font-size: $text-size/1.2;
+	  	line-height: $text-size*1.2;
+	}
+	.md-requiredlogin.login form .forgetmenot label{
+	  font-size:12px;line-height:19px}
+	#login{
+	  width:320px;padding:114px 0 0;margin:auto}
+	#login_error, .md-requiredlogin.login .message{
+	  margin:0 0 16px 8px;padding:12px}
+	#nav, #backtoblog{
+	  text-shadow:#fff 0 1px 0;margin:0 0 0 16px;padding:16px 16px 0}
+	#backtoblog{
+	  padding:12px 16px 0}
+	form .input, input[type="text"]{
+		font-size: round($text-size - 3);
+		line-height: round($text-size*1.1);
+		padding: round($text-size/2);
+		height: inherit;
+		color: $form-text-color;
+		display: block;
+		border: 1px solid #e7ebed;
+		width: 100%;
+		background: #fdfdfd;
+		font-weight: 100;
+		border-radius: 0;
+	  	&:focus {
+			outline: none;
+		}
+	}
+}
+@-webkit-keyframes id-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes id-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,121 @@
+.ignitiondeck {
+	// 
+	&.id-widget-wrap {
+		
+	}
+	.id-product-infobox {
+		@include vgradient(rgba(#207BB3, .70), rgba(#10416D, .70), 0px, 500px);
+		color: $text-color;
+	}
+	h2.id-product-title a {
+		color: $text-color;
+	}
+// The Progress Bar
+	.progress-wrapper{
+		background: rgba($pri-accent, .66);
+		border-top: 2px solid $pri-accent;
+		border-bottom: 2px solid $pri-accent;
+	}
+	.progress-bar{
+		background: -moz-linear-gradient(top,  rgba(195,0,0,0.66) 0%, rgba(174,0,11,0.65) 58%, rgba(218,57,0,0.75) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(195,0,0,0.66)), color-stop(58%,rgba(174,0,11,0.65)), color-stop(100%,rgba(218,57,0,0.75))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(195,0,0,0.66) 0%,rgba(174,0,11,0.65) 58%,rgba(218,57,0,0.75) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(195,0,0,0.66) 0%,rgba(174,0,11,0.65) 58%,rgba(218,57,0,0.75) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(195,0,0,0.66) 0%,rgba(174,0,11,0.65) 58%,rgba(218,57,0,0.75) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(195,0,0,0.66) 0%,rgba(174,0,11,0.65) 58%,rgba(218,57,0,0.75) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8c30000', endColorstr='#bfda3900',GradientType=0 ); /* IE6-9 */
+	}
+
+	.progress-percentage{
+		color: $text-color;
+	}
+// The Data
+	.id-progress-raised, .id-product-total{
+	   	
+	}
+	.id-product-funding, .id-product-pledges {
+		color: $alt-text-color;
+	}
+	.id-product-days {
+		
+	}
+	.id-product-days-to-go {
+		
+	}
+	.id-product-proposed-end {
+		color: $alt-text-color;
+		font-weight: lighter;
+	}
+	.id-product-description {
+		color: #9ED7FF;
+		background: rgba($secondary-bg, .45);
+	}
+// The Button
+	a.main-btn, a.learn-more-button {
+		@include border-radius(8px);
+		background: rgb(199,60,17); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(199,60,17,1) 0%, rgba(167,21,36,1) 42%, rgba(168,20,25,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(199,60,17,1)), color-stop(42%,rgba(167,21,36,1)), color-stop(100%,rgba(168,20,25,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(199,60,17,1) 0%,rgba(167,21,36,1) 42%,rgba(168,20,25,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(199,60,17,1) 0%,rgba(167,21,36,1) 42%,rgba(168,20,25,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(199,60,17,1) 0%,rgba(167,21,36,1) 42%,rgba(168,20,25,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(199,60,17,1) 0%,rgba(167,21,36,1) 42%,rgba(168,20,25,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c73c11', endColorstr='#a81419',GradientType=0 ); /* IE6-9 */
+		color: rgba(#ffffff, .9) !important;
+	}
+	a.main-btn:hover, a.main-btn:active, a.learn-more-button:hover, a.learn-more-button:active {
+		background: rgb(216,79,0); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(216,79,0,1) 0%, rgba(173,13,16,1) 42%, rgba(163,4,7,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(216,79,0,1)), color-stop(42%,rgba(173,13,16,1)), color-stop(100%,rgba(163,4,7,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(216,79,0,1) 0%,rgba(173,13,16,1) 42%,rgba(163,4,7,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(216,79,0,1) 0%,rgba(173,13,16,1) 42%,rgba(163,4,7,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(216,79,0,1) 0%,rgba(173,13,16,1) 42%,rgba(163,4,7,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(216,79,0,1) 0%,rgba(173,13,16,1) 42%,rgba(163,4,7,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d84f00', endColorstr='#a30407',GradientType=0 ); /* IE6-9 */
+		color: rgba(#ffffff, 1) !important;
+	}
+// Levels
+	.id-product-levels a .level-group {
+		@include transition(all, 200ms, ease-in-out, 0);
+		background: rgba($pri-accent, .15);
+	}
+	.id-product-levels a .level-group:hover {
+		background: saturate(rgba($secondary-bg, .6), 20%);
+	}
+
+	.id-product-levels a .id-level-title {
+		background: rgba(#2495DA, .5);
+		color: #fff;
+		@include transition(all, 300ms, ease, 0);
+	}
+	.id-product-levels a .level-group:hover .id-level-title {
+		background: rgba(#2495DA, .7);
+	}
+	.id-product-levels a .id-level-title span {
+		font-weight: lighter;
+	}
+	.id-product-levels a .id-level-desc {
+		color: $text-color;
+	}
+	.id-product-levels a .id-level-desc p {
+		color: $text-color;
+	}
+	.id-product-levels a .id-level-counts {
+		color: #00B0FF;
+	}
+
+// Powered By ID
+	.poweredbyID span a {
+		background: transparent url(images/poweredbyID-bright.png) no-repeat center center;
+		background-size: 136px 39px;
+	}
+// Creator Profile
+	&.id-creatorprofile {
+		color: $text-color;
+		@include vgradient(rgba(#207BB3, .70), rgba(#10416D, .70), 0px, 500px);
+		border: none;
+		.id-creator-links a {
+		color: #fff;
+		}
+	}
+}

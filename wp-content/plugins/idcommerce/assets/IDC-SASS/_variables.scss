@@ -1,0 +1,30 @@
+// typography
+$text-size: 16px;
+$font-size: 18px;
+// background colors
+$primary-bg: #ececec;
+$secondary-bg: #dfdfdf;
+$dark-primary-bg: darken($primary-bg, 50%);
+$light-primary-bg: lighten($primary-bg, 6%);
+$invert-bg: invert($primary-bg);
+
+// text colors
+$text-color: #2a2a2a;
+$bright-color: saturate(darken($text-color, 20%), 10%);
+$faded-color: rgba(desaturate(lighten($text-color, 15%), 10%), 0.7);
+$alt-text-color: #4686df;
+$bright-alt-color: saturate(lighten($alt-text-color, 20%), 10%);
+$faded-alt-color: desaturate(lighten($alt-text-color, 40%), 20%);
+$alt-complement: complement($alt-text-color);
+$link-color: #2B95B2;
+$header-color: darken($alt-text-color, 50%);
+
+$ui-text-color: #29b08b;
+
+$font-color: #455a64; 
+$form-text-color: #90a4ae;
+
+// + more
+
+$border-width: 1px;
+$border-radius: 3px;

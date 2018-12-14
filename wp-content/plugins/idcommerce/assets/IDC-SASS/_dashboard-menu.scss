@@ -1,0 +1,33 @@
+.memberdeck {
+	// The styles for the Dashboard Menu at the top of the dashboard
+	.dashboardmenu {
+		margin: 0;
+		font-size: $text-size;
+		line-height: $text-size*2;
+		background-color: fade-out($dark-primary-bg, .7);
+		border-bottom: none;
+		margin-bottom: 10px;
+		li {
+			margin: 0;
+			padding: 1px 0 0 0;
+			display: inline-block;
+			height: $text-size*2;
+			line-height: $text-size*2;
+		}
+		a, a:visited {
+			color: $dark-primary-bg;
+			padding: $text-size/2 $text-size;
+			margin: 0;
+		}
+		a:hover, .active a {
+			color: $link-color;
+			padding: $text-size/2 $text-size;
+		}
+		li:hover, li.active a {
+			background-color: $primary-bg;
+		}
+		.help {
+			float: right;
+		}
+	}
+}

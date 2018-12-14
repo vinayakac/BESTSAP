@@ -1,0 +1,392 @@
+.mfp-content .idc-terms-conditions.idc_lightbox, .mfp-content .idc-privacy-policy.idc_lightbox {
+    height: 500px;
+    padding: 0 20px;
+    width: 600px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+.mfp-content .idc_lightbox .idc_lightbox_wrapper {
+	overflow: scroll;
+	height: 100%;
+	padding: 40px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Basic styling for table in .idc-social-sharing-box */
+.idc-social-sharing-box { 
+	padding: 27px;
+	&.idc_lightbox {
+		max-width:640px !important; 
+		box-sizing: content-box;
+	}
+	.idc-order-info {
+		padding: 0;
+		text-align: left;
+		padding-top:25px;
+		border-radius: 6px;
+		border:2px solid transparent;
+		width:640px;
+		h2 { 
+			color:#a4d13b;
+			font-size:42px;
+			margin-bottom:9px; }
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		  background-color: transparent;
+		}
+		td,th {
+		  padding: 0;
+		  text-align: left;
+		}
+		* {
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+		.table {
+		  width: 100%;
+		  max-width: 100%;
+		  margin-bottom: 20px;
+		}
+		table td {
+			padding-left:25px;
+			padding-right:25px;
+		}
+		.table > thead > tr > th,
+		.table > tbody > tr > th,
+		.table > tfoot > tr > th,
+		.table > thead > tr > td,
+		.table > tbody > tr > td,
+		.table > tfoot > tr > td {
+		  padding: 8px;
+		  line-height: 1.42857143;
+		  vertical-align: top;
+		}
+		.table > thead > tr > th {
+		  vertical-align: bottom;
+		}
+		table tr.orderheader td {
+		  border: none;
+		}
+		table .right {
+			text-align:right;
+		}
+		table td.orderinfo {
+			font-size: 21px;
+			color: #364d65;
+  			padding-bottom: 0;
+		}
+		table .detailtitle {
+			color: #364d65;
+			font-size: 12px;
+		  	border: none;
+		}
+		table .dates {
+			color: #8494a4;
+			font-size: 12px;
+		 	border: none;
+		}
+		.order {
+			color: #ced3da;
+		}
+		.order-details-grid {
+			thead {
+				border-top: 1px solid #ecedf2;
+				border-bottom: 1px solid #ecedf2;
+			}
+			margin-top: 36px;
+			table .rowbg {
+				background: #fcfcfd;
+			}
+			table .rowbg th {
+				text-align: center;
+				color: #8494a4;
+				font-size: 12px;
+				text-transform: uppercase;
+				padding-top: 20px;
+				height: 49px;
+			}
+			table .details {
+				font-size: 16px;
+				color: #364d65;
+				text-align: center;
+				height: 90px;
+			}
+			table .details td {
+				height: 100px;
+				padding-top: 35px;
+			}
+			table .title {
+				color:#3ca7c5;
+				font-size:18px;
+				font-weight:400;
+				text-align:left;
+			}
+			table .rowbg th.left {
+				text-align:left;
+			}
+			table .rowbg th.right {
+				text-align:right;
+			}
+			table .title .authorname {
+				color:#b0b9c4;
+				font-size:14px;
+				font-style:italic;
+				font-weight:100;
+				text-align:left;
+				display:block;
+			}
+			table .title .right {
+				text-align:right;
+				padding-right:25px;
+			}
+			table .qty:before {
+				content:'.....';
+			}
+			table .qty:after {
+				content:'.....';
+			}
+			table .total_price {
+				border-top:1px solid #eef0f7;
+				border-bottom:1px solid #eef0f7;
+				text-align:center;
+			}
+			table .total_price td {
+				height:49px;
+				font-size:12px;
+				text-transform:uppercase;
+				padding-top:12px;
+				text-align:right;
+
+			}
+
+			table .totalprice {
+				background-color: #eef0f7 !important;
+				color: #364d65;
+			}
+
+			table .totalprice .currency {
+			  font-size:25px;
+			  font-weight: 200;
+			}
+
+			table .totalprice b {
+				font-size:25px;
+			}
+		}
+		.print-details {
+			table {
+				border-bottom:1px solid #eef0f7;
+				td {
+					padding-top:15px;
+					padding-bottom:50px;
+				}
+
+				.email {
+					color:#b0b9c4;
+					font-size:14px;
+					font-style:italic;
+					font-weight:100;
+				}
+
+				.right {
+					text-align:right;
+				}
+
+				a.receipt {
+					color:#5db4cd;
+					font-size:14px;
+					text-align:right;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+	.social-sharing-options-wrapper {
+			background-color:#fcfdff;
+			padding:25px;
+			border-radius: 6px;
+			border:2px solid transparent;
+			font-family:'Open Sans';
+			h2 {
+				color:#364d65;
+				font-size:25px;
+				margin-bottom:20px;
+			}
+			.friendlink {
+				margin-bottom:100px;
+				.thumb {
+					float:left;
+					height:40px;
+					width:60px;
+					background:#000;
+					margin-right:20px;
+					img {
+					  width: 60px;
+					  height: 40px;
+					}
+				}
+				.text {
+					float:left;
+					width:500px;
+					color:#333333;
+					font-size:12px;
+					line-height:19px;
+					margin-top:0;
+				}
+				.text a {
+					text-decoration:none;
+					color:#3ca7c5;
+				}
+			}
+			.sharelink {
+				font-size:12px;
+				color:#b0b9c4;
+				margin-top:20px;
+				i {
+					margin-right:7px;
+				}
+				a {
+					text-decoration:none;
+					color:#b0b9c4;
+				}
+			}
+		}
+}
+
+// Print CSS 
+.print-order {
+	display:none;
+}
+@media print {
+	.mfp-container {
+		padding: 0;
+		background-color: #fff;
+	}
+	.mfp-content {
+		height: 100%;
+	}
+ 	html, body {
+ 		width: 100%;
+ 		height: 100%;
+ 	}
+	.idc-social-sharing-box.idc_lightbox {
+		color: #000 !important;
+		max-width: 100% !important;
+		height: 100%;
+	}
+	.md-profile table {
+		display: none;
+	}
+	body.admin-bar .dashboard-nav {
+		display: none;
+	}
+	.admin-bar .helix_avatar {
+		display: none;
+	}
+	.print-order {
+		color: #000;
+		font-family: 'Helvetica', arial, sans-serif;
+		display: block;
+	}
+	.idc-social-sharing-box .idc-order-info {
+		width: 100%;
+	}
+	.print-order .table {
+		width: 100%;
+	}
+	.print-order .table tr {
+		margin: 0;
+		padding: 0;
+	}
+
+	.print-order .table td {
+		margin: 0;
+		padding: 0;
+	}
+
+	.print-order .table .right {
+		text-align: right;
+	}
+	.idc-social-sharing-box .idc-order-info .order-details-grid thead{
+		border-top: 1px solid #333;
+		border-bottom: 1px solid #333;
+	}
+	.idc-social-sharing-box .table .detailtitle {
+		color: #333;
+		font-size: 12px;
+	}
+	.idc-social-sharing-box .idc-order-info .order-details-grid table .rowbg {
+		background: none;
+	}
+	.idc-social-sharing-box .table .dates {
+		color: #333 !important;
+		font-size: 12px;
+	}
+
+	.idc-social-sharing-box .table .customername {
+	color: #333;
+		font-size: 12px;
+		padding-top: 25px;
+	}
+	.idc-social-sharing-box .idc-order-info .order-details-grid table .title {
+		color: #000;
+	}
+	.idc-social-sharing-box .idc-order-info .order-details-grid table .total_price {
+		border: none;
+	}
+	.idc-social-sharing-box .idc-order-info .order-details-grid table .totalprice {
+		border-top: 1px solid #333;
+		background-color: transparent !important;
+	}
+	.idc-order-info .nonprint {
+		display: none;
+	}
+
+	.print-details {
+		display: none;
+	}
+
+	.social-sharing-options-wrapper {
+		display: none;
+	}
+
+	a:after {
+		content: " [" attr(href) "] ";
+	}
+
+	.print-details .table a.receipt  {
+		display: none;
+	}
+
+	.idc_lightbox button.mfp-close {
+		display: none;
+	}
+
+	.order-details-grid .table .title .authorname {
+		display: none;
+	}
+
+	.order-details-grid .table .title {
+		color: #000;
+	}
+
+	.order-details-grid .table .totalprice {
+		color: #000;
+	}
+
+	.order-details-grid .table .details {
+		color: #333;
+	}
+
+	.idc-social-sharing-box .idc-order-info .order-details-grid .table .rowbg th {
+		color: #333;
+	}
+}
+// End Print CSS 
+

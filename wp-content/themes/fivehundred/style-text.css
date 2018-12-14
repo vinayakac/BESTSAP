@@ -1,0 +1,358 @@
+.entry-content img {
+	margin: 0 0 1.5em 0;
+}
+.entry-content img.transparent {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+}
+.entry-content img.size-projectpage-large {
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+.entry-content img.singlethumb {
+	margin: -11px 0 0 0 !important;
+}
+.entry-content img {
+	max-width: 100%;
+	height: auto;
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+    margin-right: 1.5em;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float:  right;
+ 	margin-left: 1.5em;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption {
+	text-align: center;
+	margin-bottom: 1.5em;
+	background: rgb(252,252,252);
+	border: 1px solid #ddd;
+	font-size: .8em;
+}
+.wp-caption img {
+	border: 0 none;
+	margin: 4px 0 0 0;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	margin: 0 !important;
+}
+.wp-smiley { 
+	max-height: 1em;
+	margin:0 !important;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery-caption {
+	margin:-1.5em 0 0 0;
+}
+
+
+/* Pullquotes
+-------------------------------------------------------------- */
+
+blockquote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
+	text-align: right;
+	width: 33%;
+}
+blockquote.right {
+	float: right;
+	margin-left: 20px;
+	margin-right: 0;
+	text-align: left;
+	width: 33%;
+}
+
+strong, b {
+	font-weight: bold;
+}
+em, i {
+	font-style: italic;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* =Main content and comment content
+-------------------------------------------------------------- */
+
+.entry-meta {
+	clear: both;
+}
+.entry-header {
+	margin-bottom: 24px;
+}
+.entry-header img.wp-post-image {
+	margin-bottom: 24px;
+}
+.entry-header .entry-title {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: normal;
+}
+.entry-header .entry-title a {
+	text-decoration: none;
+}
+.entry-header .entry-format {
+	margin-top: 24px;
+	font-weight: normal;
+}
+.entry-header .comments-link {
+	margin-top: 24px;
+	font-size: 13px;
+	line-height: 1.846153846;
+	color: #181818;
+}
+.comments-link a,
+.entry-meta a {
+	color: #181818;
+	text-decoration: none;
+}
+.comments-link a:hover,
+.entry-meta a:hover {
+	color: #41aac7;
+}
+.entry-footer {
+	display: block;
+	text-align: right;
+	margin: 5px 0 20px 0;
+}
+.entry-footer a {
+	font-size: 10px;
+	color: #30303f;
+	padding: 3px 5px;
+	text-decoration: none;
+}
+article.sticky .featured-post {
+	color: #757575;
+	font-size: 13px;
+	line-height: 3.692307692;
+	margin-bottom: 24px;
+	text-align: center;
+}
+.entry-content,
+.entry-summary,
+.mu_register {
+	line-height: 1.714285714;
+}
+.entry-content h1,
+.comment-content h1,
+.entry-content h2,
+.comment-content h2,
+.entry-content h3,
+.comment-content h3,
+.entry-content h4,
+.comment-content h4,
+.entry-content h5,
+.comment-content h5,
+.entry-content h6,
+.comment-content h6 {
+	margin: 24px 0;
+	line-height: 1.714285714;
+	color: #30303f;
+}
+h1,
+.entry-content h1,
+.comment-content h1 {
+	font-size: 28px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+h2,
+.entry-content h2,
+.comment-content h2,
+.mu_register h2 {
+	font-size: 24px;
+	line-height: 1.6;
+	padding: 0 0 3px 0;
+	margin: 10px 0 15px 0;
+}
+h3,
+.entry-content h3,
+.comment-content h3 {
+	font-size: 20px;
+	line-height: 1.846153846;
+	padding: 0 0 3px 0;
+	margin: 10px 0 15px 0;
+}
+h4,
+.entry-content h4,
+.comment-content h4 {
+	font-size: 16px;
+	line-height: 1.846153846;
+	font-weight: bold;
+}
+h5,
+.entry-content h5,
+.comment-content h5 {
+	font-size: 14px;
+	line-height: 1.846153846;
+	font-weight: bold;
+}
+h6,
+entry-content h6,
+.comment-content h6 {
+	font-size: 12px;
+	line-height: 1.846153846;
+	font-weight: bold;
+}
+.entry-content p,
+.entry-summary p,
+.comment-content p,
+.mu_register p {
+	margin: 0 0 24px;
+	line-height: 1.1;
+}
+.entry-content ol,
+.comment-content ol,
+.entry-content ul,
+.comment-content ul,
+.mu_register ul {
+	margin: 0 0 24px;
+	line-height: 1.314285714;
+}
+.entry-content ul ul,
+.comment-content ul ul,
+.entry-content ol ol,
+.comment-content ol ol,
+.entry-content ul ol,
+.comment-content ul ol,
+.entry-content ol ul,
+.comment-content ol ul {
+	margin-bottom: 0;
+}
+.entry-content ul,
+.comment-content ul,
+.mu_register ul {
+	list-style: disc outside;
+}
+.entry-content ol,
+.comment-content ol {
+	list-style: decimal outside;
+}
+.entry-content li,
+.comment-content li,
+.mu_register li {
+	margin: 0 0 0 36px;
+}
+.entry-content blockquote,
+.comment-content blockquote {
+	margin-bottom: 24px;
+	padding: 24px;
+	font-style: italic;
+	background-color: #eeeeea;
+	border: 1px solid #fafafa;
+}
+.entry-content blockquote p:last-child,
+.comment-content blockquote p:last-child {
+	margin-bottom: 0;
+}
+.entry-content code,
+.comment-content code {
+	font-family: Consolas, Monaco, Lucida Console, monospace;
+	font-size: 12px;
+	line-height: 2;
+}
+.entry-content pre,
+.comment-content pre {
+	border: 1px solid #ededed;
+	color: #666;
+	font-family: Consolas, Monaco, Lucida Console, monospace;
+	font-size: 12px;
+	line-height: 1.714285714;
+	margin: 24px 0;
+	overflow: auto;
+	padding: 24px;
+}
+.entry-content pre code,
+.comment-content pre code {
+	display: block;
+}
+.entry-content abbr,
+.comment-content abbr,
+.entry-content dfn,
+.comment-content dfn,
+.entry-content acronym,
+.comment-content acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+.entry-date abbr {
+	cursor: default;
+}
+.entry-content address,
+.comment-content address {
+	display: block;
+	line-height: 1.714285714;
+	margin: 0 0 24px;
+}
+img.alignleft {
+	margin: 0 24px 12px 0;
+}
+img.alignright {
+	margin: 0 0 12px 24px;
+}
+img.aligncenter {
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+.entry-content embed,
+.entry-content iframe,
+.entry-content object,
+.entry-content video {
+	margin-bottom: 24px;
+}
+.entry-content dl,
+.comment-content dl {
+	margin: 0 24px;
+}
+.entry-content dt,
+.comment-content dt {
+	font-weight: bold;
+	line-height: 1.714285714;
+}
+.entry-content dd,
+.comment-content dd {
+	line-height: 1.714285714;
+	margin-bottom: 24px;
+}
+.entry-content table,
+.comment-content table {
+	border-bottom: 1px solid #ededed;
+	color: #757575;
+	font-size: 12px;
+	line-height: 2;
+	margin: 0 0 24px;
+	width: 100%;
+}
+.entry-content table caption,
+.comment-content table caption {
+	font-size: 16px;
+	margin: 24px 0;
+}
+.entry-content td,
+.comment-content td {
+	border-top: 1px solid #ededed;
+	padding: 6px 10px 6px 0;
+}

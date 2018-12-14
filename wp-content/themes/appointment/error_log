@@ -1,0 +1,2 @@
+[10-Sep-2017 12:09:28 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/suvidhamarriage/public_html/sapgtsonline.com/wp-content/themes/appointment/404.php on line 1
+[11-Sep-2017 21:48:39 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/suvidhamarriage/public_html/sapgtsonline.com/wp-content/themes/appointment/index.php on line 2

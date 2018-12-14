@@ -1,0 +1,138 @@
+.ignitiondeck {
+	.id-purchase-form-wrapper, .id-fes-form-wrapper {
+		background-color: rgba($primary-bg, .2);
+	}
+	.id-purchase-form {
+		border: none;
+	}
+	form {
+		border: none;
+		color: $text-color;
+		h1, h2, h3, h4, h5, h6, .form-level {
+			border-bottom: 1px solid rgba($text-color, .3);
+		}
+		#stripe-input:after {
+			background: #75B83A;
+			color: #fff;
+		}
+		#id-notifications .notification {
+			background-color: #cee2f2;
+		    border-color: #2e82ae;
+		    color: #04294b;
+		}
+		#message-container .notification.error {
+			background-color: #F2D4CE;
+		    border-color: #AE432E;
+		    color: #4b0505;
+		}
+		#message-container .close-notification {
+			color: #737373;
+		}
+		.form-row {
+			
+		}
+		.form-row.half {
+			
+		}
+		.form-row.third {
+			
+		}
+		.form-row.twothird {
+			
+		}
+		.form-row.date {
+			
+		}
+		.form-row.date input{
+			
+		}
+		.form-row label{
+			color: $alt-text-color;
+		}
+		.form-row label span{
+			
+		}
+		.form-row input{
+			@include vgradient(lighten($secondary-bg, 44%), #ffffff, 0%, 100%);
+		}
+		.form-row input, .form-row textarea, .form-row select {
+			color: #444;
+			border: 1px solid #9CB0B9;
+		}
+		.finaldesc, .finaldesc p {
+			color: $text-color;
+		}
+		.main-btn, .form-row input[type=submit] {
+			@include vgradient(saturate($sec-accent, 30%), $sec-accent, 0%, 100%);
+			@include border-radius(10px);
+			border: none;
+			color: darken($sec-accent, 30%);
+		}
+		.main-btn:hover, .form-row input[type=submit]:hover {
+			@include vgradient(saturate($sec-accent, 50%), rgba($sec-accent, 1), 0%, 100%);
+			color: darken($sec-accent, 50%);
+		}
+		.payment-errors {
+			color: rgba(255, 255, 255, 0.92);
+			background-color: rgba(183, 14, 14, 0.77);
+		}
+		.cards img{
+
+		}
+		.payment-type-selector {
+			
+		}
+		.payment-type-selector a {
+			color: invert(darken($alt-text-color, 70%));
+			@include vgradient(rgba($pri-accent, .8), saturate($pri-accent, 30%), 0%, 100%);
+		}
+		.payment-type-selector a:hover {
+			border: 1px solid $alt-text-color;
+			color: invert(darken($alt-text-color, 70%));
+		}
+		.payment-type-selector a.active {
+			border: 1px solid $alt-text-color;
+			color: invert(darken($alt-text-color, 70%));
+		}
+		.payment-type-selector a.active:hover {
+			color: invert(darken($alt-text-color, 90%));
+		}
+		.payment-type-selector a#pay-with-paypal span{
+
+		}
+		.payment-type-selector a#pay-with-stripe span {
+
+		}
+		.id-checkout-level-desc {
+			background-color: rgba(255,255,255, .4);
+			color: rgba($text-color, .7);
+		}
+		.ign-checkout-price {
+			color: $text-color;
+		}
+		#stripe-input {
+
+		}
+		label.dd-option-text {
+			color: $pri-accent;
+		}
+		.dd-option-description {
+			border-left: 1px solid $primary-bg;
+		}
+
+		ul.dd-options {
+		}
+
+		.required-mark {
+			color: $pri-accent;
+		}
+		.red-border {
+			border: 1px solid red;
+		}
+		.form-item-error-msg {
+			font-size: $text-size/1.5;
+			font-weight: bold;
+			color: red;
+		}
+	}
+}

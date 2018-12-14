@@ -1,0 +1,58 @@
+@mixin vgradient($from, $to, $pos1, $pos2) {
+	background-image: $to; /* Old browsers */
+	background-image: -moz-linear-gradient($from $pos1, $to $pos2); // FF3.6+
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop($pos1,$from), color-stop($pos2,$to)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient($from $pos1,$to $pos2); // Chrome10+,Safari5.1+
+	background-image: -o-linear-gradient($from $pos1,$to $pos2); // Opera 11.10+
+	background-image: -ms-linear-gradient($from $pos1,$to $pos2); // IE10+
+	background-image: linear-gradient($from $pos1,$to $pos2); // W3C
+	filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")
+			+ ie-hex-str($from)
+			+ unquote("', endColorstr='")
+			+ ie-hex-str($to)
+			+ unquote("',GradientType=0)"); // IE6-9
+}
+
+@mixin transition($property, $duration, $timing, $delay) {
+	-webkit-transition: $property $duration $timing $delay;
+    -moz-transition:    $property $duration $timing $delay;
+    -o-transition:      $property $duration $timing $delay;
+    transition:         $property $duration $timing $delay;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+	-moz-box-shadow:    $x $y $blur $spread $color;
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	box-shadow:         $x $y $blur $spread $color;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+@mixin calc($property, $default, $expression) { 
+  #{$property}: $default;
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}:    -moz-calc(#{$expression}); 
+  #{$property}:         calc(#{$expression}); 
+} 
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 650px)  { @content; }
+  }
+}

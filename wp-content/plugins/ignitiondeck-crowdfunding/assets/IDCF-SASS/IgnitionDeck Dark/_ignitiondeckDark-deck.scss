@@ -1,0 +1,98 @@
+.ignitiondeck {
+	// 
+	&.id-widget-wrap {
+		
+	}
+	.id-product-infobox {
+		background: rgba($primary-bg, .1);
+	}
+// The Progress Bar
+	.progress-wrapper{
+		background: rgba($pri-accent, .5);
+	}
+	.progress-bar{
+		background: $sec-accent;
+	}
+
+	.progress-percentage{
+		color: $text-color;
+	}
+// The Data
+	.id-progress-raised, .id-product-total{
+	   	color: $text-color;
+	}
+	.id-product-funding, .id-product-pledges {
+		color: $alt-text-color;
+	}
+	.id-product-days {
+		color: $text-color;
+	}
+	.id-product-days-to-go {
+		color: $text-color;
+	}
+	.id-product-proposed-end {
+		color: $alt-text-color;
+		font-weight: lighter;
+	}
+	.id-product-description {
+		background: invert(rgba($primary-bg, .5));
+		color: $alt-text-color;
+	}
+// The Button
+	a.main-btn, a.learn-more-button {
+		@include border-radius(8px);
+		@include vgradient(saturate($sec-accent, 30%), $sec-accent, 0%, 100%);
+		color: darken($sec-accent, 30%) !important;
+	}
+	a.main-btn:hover, a.main-btn:active, a.learn-more-button:hover, a.learn-more-button:active {
+		@include vgradient(saturate($sec-accent, 50%), rgba($sec-accent, 1), 0%, 100%);
+		color: darken($sec-accent, 50%);
+	}
+	a.learn-more-button {
+		@include border-radius(4px);
+	}
+// Levels
+	.id-product-levels a .level-group {
+		@include transition(all, 200ms, ease-in-out, 0);
+		background: invert(rgba($primary-bg, .3));
+	}
+	.id-product-levels a .level-group:hover {
+		background: invert(rgba($primary-bg, .6));
+	}
+
+	.id-product-levels a .id-level-title {
+		background: rgba($pri-accent, .5);
+		color: #fff;
+		@include transition(all, 300ms, ease, 0);
+	}
+	.id-product-levels a .level-group:hover .id-level-title {
+		background: rgba($pri-accent, .7);
+	}
+	.id-product-levels a .id-level-title span {
+		font-weight: lighter;
+	}
+	.id-product-levels a .id-level-desc {
+		color: $text-color;
+	}
+	.id-product-levels a .id-level-desc p {
+		color: $text-color;
+	}
+	.id-product-levels a .id-level-counts {
+		color: $pri-accent;
+	}
+
+// Powered By ID
+	.poweredbyID span a {
+		background: transparent url(images/poweredbyID-bright.png) no-repeat center center;
+		background-size: 136px 39px;
+	}
+// Creator Profile
+	&.id-creatorprofile {
+		color: $text-color;
+		background: rgba($primary-bg, .1);
+		border: none;
+		.id-creator-links a.facebook, .id-creator-links a.twitter, .id-creator-links a.gplus {
+		color: lighten($primary-bg, 80%);
+		}
+	}
+}

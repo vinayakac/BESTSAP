@@ -1,0 +1,81 @@
+.memberdeck {
+	// The styles for the Profile section
+	.md-profile {
+		//margin: 10px;
+		padding-top: 12px;
+		.profile-wrapper {
+			float: left;
+			width: 65%;
+   		 @include breakpoint(baby-bear) {
+   			 width: 100%; 
+   	  		}
+		}
+		.profile-info-wrapper {
+			float: right;
+			width: 35%;
+			margin-top: 15px;
+		}
+		.md-avatar {
+			float: left;
+			width: 70px;
+			height: 70px;
+			margin-right: 10px;
+			img {
+				border-radius: $text-size*3;
+				overflow: hidden;
+				width: 70px;
+				height: 70px;
+			}
+		}
+		.md-editprofile {
+			margin: 0 0 0 108px;
+			font-size: round($text-size*.7);
+			line-height: $text-size;
+			a i {
+				font-size: inherit;
+			}
+		}
+		.md-fullname {
+			font-size: $text-size;
+			line-height: $text-size*1.5;
+			text-transform: uppercase;
+			margin-top: round($text-size - 4);
+			font-weight: 700;
+		}
+		.md-credits {
+			text-transform: uppercase;
+			span.green {
+				color: $ui-text-color;
+				font-size: round($text-size*2.1);
+				line-height: round($text-size*2.2);
+				float: left;
+				font-weight: bold;
+				margin: -6px 5px 0 0;
+				text-align: right;
+			}
+			span {
+				font-size: round($text-size/1.5);
+				line-height: round($text-size/1.3);
+				display: block;
+				float: left;
+				min-width: 75px;
+			}
+		}
+		.md-membership {
+			font-size: round($text-size - 3);
+			line-height: $text-size*1.5;
+			color: $form-text-color;
+			font-weight: 100;
+			margin-top: 10px;
+		}
+		.md-registered {
+			font-size: round($text-size - 3);
+			line-height: $text-size*1.5;
+			color: $form-text-color;
+			font-weight: 100;
+		}
+		li:hover, li.form-row:hover {
+			background-color: transparent !important;
+		}
+	}
+}

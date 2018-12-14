@@ -1,0 +1,58 @@
+@mixin vgradient($from, $to) {
+	background: $to; // Old browsers
+	background: -moz-linear-gradient(top,  $from 0%, $to 100%); // FF3.6+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to)); // Chrome,Safari4+
+	background: -webkit-linear-gradient(top,  $from 0%,$to 100%); // Chrome10+,Safari5.1+
+	background: -o-linear-gradient(top,  $from 0%,$to 100%); // Opera 11.10+
+	background: -ms-linear-gradient(top,  $from 0%,$to 100%); // IE10+
+	background: linear-gradient(to bottom,  $from 0%,$to 100%); // W3C
+	filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='")
+			+ ie-hex-str($from)
+			+ unquote("', endColorstr='")
+			+ ie-hex-str($to)
+			+ unquote("',GradientType=0)"); // IE6-9
+}
+
+@mixin transition($property, $duration, $timing, $delay) {
+	-webkit-transition: $property $duration $timing $delay;
+    -moz-transition:    $property $duration $timing $delay;
+    -o-transition:      $property $duration $timing $delay;
+    transition:         $property $duration $timing $delay;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+	-moz-box-shadow:    $x $y $blur $spread $color;
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	box-shadow:         $x $y $blur $spread $color;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+@mixin calc($property, $default, $expression) { 
+  #{$property}: $default;
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}:    -moz-calc(#{$expression}); 
+  #{$property}:         calc(#{$expression}); 
+} 
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 450px)  { @content; }
+  }
+}

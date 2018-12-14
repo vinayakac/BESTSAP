@@ -1,0 +1,92 @@
+// Backers List
+ul.ign_backer_list {
+	width: auto;
+	box-sizing: border-box;
+	margin: 0 !important;
+	* {
+		box-sizing: border-box;
+	}
+	li.backer_list_item {
+		width: 100%;
+		height: 80px;
+		display: table;
+		margin: 0;
+		padding: 16px;
+		clear: both;
+		position: relative;
+		&:hover {
+			background-color: rgba(199,199,199, .05);
+		}
+		&:nth-child(odd) {
+			background-color: rgba(166,166,166, .1);
+		}
+		&:hover:nth-child(odd) {
+			background-color: rgba(166,166,166, .15);
+		}
+		.backer_list_avatar {
+			float: left;
+			display: table-column;
+			width: 48px;
+			height: 48px;
+			text-align: center;
+			padding-right: 5px;
+			position: relative;
+			img {
+				width: 100%;
+				height: auto;
+				max-height: 48px;
+				max-width: 48px;
+				min-height: 24px;
+				min-width: 24px;
+				vertical-align: middle;
+				position: absolute;
+				left: -10px;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+				border-radius: 100px;
+			}
+		}
+		.backer_list_namedate {
+			float: left;
+			max-width: 30%;
+			display: table-column;
+		}
+		.backer_list_name, .backer_list_level {
+			height: 18px;
+			font-size: 16px;
+			line-height: 18px;
+			margin-top: 8px;
+			white-space: nowrap;
+  			overflow: hidden;
+  			text-overflow: ellipsis;
+		}
+		.backer_list_project {
+			display: none;
+		}
+		.backer_list_levelprice {
+			float: right;
+			max-width: 65%;
+			text-align: right;
+			display: table-column;
+		}
+		.backer_list_date, .backer_list_price {
+			font-size: 10px;
+			line-height: 16px;
+			height: 16px;
+		}
+	}
+}
+.backer_list_more {
+	margin-bottom: 15px;
+	text-align: center;
+	a {
+		padding: 5px 10px;
+		background-color: rgba(166,166,166, .1);
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: rgba(166,166,166, .15);
+	}
+}

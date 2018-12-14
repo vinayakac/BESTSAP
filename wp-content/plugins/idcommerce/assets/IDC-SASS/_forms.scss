@@ -1,0 +1,553 @@
+.memberdeck {
+	.form-row, .form-row > * {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;  
+	}
+	a.backbutton {
+		display: block;
+		width: 75%;
+		max-width: 650px;
+		margin: 0 auto;
+		background: rgba($link-color, .1);
+		text-align: left;
+		padding: 10px 20px;
+		text-decoration: none;
+	}
+	a.backbutton:before {
+		content: "\f0d9";
+		font-family: FontAwesome;
+		margin-right: 3px;
+	}
+	a.backbutton:hover {
+		background: rgba($link-color, .05);
+	}
+	p.error, p.success {
+		background-color: #fff;
+		width: 100%;
+		font-size: round($text-size*1.3);
+		line-height: round($text-size*1.5);
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		padding: $text-size;
+		box-sizing: border-box;
+	}
+	p.error {
+		color: #D0011B;
+		border: 1px solid #FF7372;
+	}
+	p.success {
+		color: #417505;
+		border: 1px solid #7ED221;
+	}
+	.fee-note {
+	  font-size: 12px;
+	  margin: 0 auto;
+	  text-align: center;
+	  max-width: 400px;
+	}
+	#payment-form {
+		background: #fff;
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 0;
+		padding-top: 10px;
+		width: 75%;
+	@media (min-width: 320px) and (max-width: 736px) { 
+		 width: 90%;
+	}
+		max-width: 650px;
+		margin: 10px auto;
+		margin-bottom: 10px !important;
+		margin-top: 0;
+		position: relative;
+		overflow: hidden;
+		border: $border-width solid #e7ebed;
+	h2 {
+		margin: 0;
+	}
+	}
+	form {
+		a {color: $ui-text-color;}
+		a.delete, a.delete i {color: #D0011B;}
+		p {
+			margin-left: 20px;
+			margin-right: 20px;
+			font-size: $text-size;
+		}
+		.form-row {
+			width: 100%;
+			margin: 0 0 26px 0;
+			vertical-align: top;
+		}
+		.form-row.full {
+			width: 100%;
+			display: inline-block;
+		}
+		.form-row.half {
+			width:50%;
+			display: inline-block;
+			@include breakpoint(mama-bear) { 
+	  			width: 100%;
+	  		}
+	  		@include breakpoint(baby-bear) { 
+	  			width: 100%;
+	  		}
+		}
+		.form-row.quarter {
+			width: 25%; 
+			display: inline-block;
+			@include breakpoint(mama-bear) { 
+	  			width: 100%;
+	  		}
+	  		@include breakpoint(baby-bear) { 
+	  			width: 100%;
+	  		}
+		}
+		.form-row.left {
+			padding-right: 20px;
+		}
+		
+		.form-row.third {
+			width: 32.5%;
+			display: inline-block;
+			@include breakpoint(mama-bear) { 
+	  			width: 100%;
+	  		}
+	  		@include breakpoint(baby-bear) { 
+	  			width: 100%;
+	  		}
+		}
+		.form-row.twothird {
+			width: 65%;
+			display: inline-block;
+			@include breakpoint(mama-bear) { 
+	  			width: 100%;
+	  		}
+	  		@include breakpoint(baby-bear) { 
+	  			width: 100%;
+	  		}
+		}
+		.form-row.twoforth {
+			width: 66.7%;
+			display: inline-block;
+			@include breakpoint(mama-bear) { 
+	  			width: 100%;
+	  		}
+	  		@include breakpoint(baby-bear) { 
+	  			width: 100%;
+	  		}
+		}
+		.form-row.date {
+			width: auto;
+			padding-left: 1%;
+		}
+		.form-row textarea.description {
+			height: 182px;
+		}
+		.form-row.date input {
+			width: auto;
+			display: inline-block;
+			padding-right: 5px;
+		}
+		.form-row label {
+			color: $font-color;
+			display: block;
+			font-size: round($text-size - 4);
+			font-weight: 700;
+			text-indent: 3px;
+			vertical-align: text-bottom;
+			padding-left: 8px;
+			padding-bottom: 4px;
+			text-transform: uppercase;
+		}
+		.form-row label span {
+			float: right;
+			margin-top: -8px;
+			&.starred {
+				color: #ed5565;
+				margin-top: 0;
+				float: none;
+			}
+		}
+		.form-row input, .form-row textarea {
+			font-size: round($text-size - 3);
+			line-height: round($text-size*1.1);
+			padding: round($text-size/2);
+			height: inherit;
+			color: $form-text-color;
+			display: block;
+			border: 1px solid #e7ebed;
+			width: 100%;
+			background: #fdfdfd;
+			font-weight: 100;
+			border-radius: 0;
+		  	&:focus {
+				outline: none;
+			}
+		}
+		.form-row input[type="file"] {
+			font-size: 16px;
+		}
+		.form-row input.error {
+			border: 1px solid #FF7372;
+		}
+		#ide_fes_file_upload {
+			border: 0;
+			font-size: round($text-size - 4);
+			background: transparent;
+			color: $form-text-color;
+			padding-left: 0;
+		}
+		
+		#ide_fes_file_upload::-webkit-file-upload-button {
+			background: #e7ebee;
+			border-radius: 0px;
+			border: 0;
+			outline: none;
+			white-space: nowrap;
+			-webkit-user-select: none;
+			cursor: pointer;
+			font-weight: 100;
+			font-size: round($text-size - 4);
+			color: $form-text-color;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			padding-right: 8px;
+		}
+		.finaldesc, .finaldesc p {
+			font-weight: 200;
+			font-size: round($text-size*1.4);
+			line-height: round($text-size*1.6);
+			color: $text-color;
+			text-align: center;
+			padding: 10px 20px;
+		}
+		.payment-errors {
+			color: #fff;
+			text-align: left;
+			width: 100%;
+			display: inline-block;
+			margin: 0 -20px 10px 0px;
+			padding-left: 40px;
+			line-height: 40px;
+			background-color: #ed5565;
+			font-weight: 100;
+			font-size: $text-size;
+			&:before {
+				content: '\f071';
+				padding-right: 10px;
+				font-family: fontAwesome;
+				position: absolute;
+				left: 10px;
+			}
+			a {
+				color: invert($link-color);
+			}
+		}
+		.cards img {
+			height: 24px;
+			width: 234px;
+			margin: 0;
+			padding: 0;
+			@media (min-width: 320px) and (max-width: 736px) { 
+			 	height: 14px;
+			 	width: auto;
+			 	margin-top: 8px;
+		 	}
+		}
+		
+		.payment-type-selector {
+			text-align: center;
+			margin-bottom: 45px;
+		}
+		.payment-type-selector div {
+			display: inline-block;
+			margin-right: 20px;
+			padding: 10px;
+			margin-bottom: 20px;
+			padding-bottom: 0;
+			position: relative;
+			&:last-child {
+			margin-right: 0;	
+    		 @include breakpoint(baby-bear) { 
+				 margin-right: 20px;
+    	  		}
+			}
+		}		
+		.payment-type-selector a {
+			display: table;
+			border: 1px solid #e7ebed;
+			color: rgba(44, 62, 80, 0.5);
+			text-decoration: none;
+			width: 85px;
+			height: 55px;
+			background-color: #fafafa;
+		}
+		.payment-type-selector a:hover {
+			border: 1px solid $ui-text-color;
+			color: rgba(44, 62, 80, 1); 
+			i {
+				color: rgba(44, 62, 80, 1);
+			}
+		}
+		.payment-type-selector a.active {
+			border: 1px solid $ui-text-color;
+			color: rgba(44, 62, 80, 1);
+			i {
+				color: rgba(44, 62, 80, 1);
+			}
+		}
+		.payment-type-selector a.active:hover {
+			color: rgba(44, 62, 80, 1);
+			i {
+				color: rgba(44, 62, 80, 1);
+			}
+			
+		}
+		.payment-type-selector a i {
+			font-size: round($text-size*1.2);
+			color: rgba(44, 62, 80, 0.5);
+			display: table-cell;
+			vertical-align: middle;
+			width: 100%;
+			&:hover {
+				color: rgba(44, 62, 80, 1);
+			}
+			&:active {
+				color: rgba(44, 62, 80, 1);
+			}
+		}
+		.payment-type-selector a span {
+			position: absolute;
+			bottom: -24px;
+			display: block;
+			font-size: round($text-size - 2);
+			font-weight: bold;
+			left: 0;
+			right: 0;
+		}
+		.payment-type-selector a#pay-with-mc span {
+			width: 185px;
+			margin-left: -40px;
+		}
+		#stripe-input {
+			margin-top: 20px;
+			padding-left: 16px;
+			padding-right: 16px;
+		} 
+		.checklist {
+			padding-top: $text-size;
+		}
+	// Lists with Radio or Checkbox items
+		.checklist input[type='checkbox'], .checklist input[type='radio'] {
+			display: inline-block;
+			width: auto;
+			line-height: $text-size*2;
+			vertical-align: middle;
+			position: relative;
+		}
+		.checklist input[type=checkbox],
+		.checklist input[type=radio] {
+		  width     : 1.25em;
+		  margin    : 0 !important;
+		  padding   : 0;
+		  font-size : 1em;
+		  opacity   : 0;
+		  position: absolute;
+		  z-index: 100;
+		  top: 17px;
+		  left: -20px;
+		  float: none;
+		}
+		@-moz-document url-prefix() { 
+		.checklist input[type=checkbox],
+		.checklist input[type=radio]{
+  		  top: 20px;
+  		  left: -20px;
+		}
+		}
+		.checklist input[type=checkbox]{
+		  @include breakpoint(mama-bear) { 
+	  		opacity: 1;
+	  		}
+		}
+		.checklist label {
+			display: inline-block;
+			line-height: $text-size*2;
+			vertical-align: middle;
+			padding-right: 0;
+			text-transform: none;
+			font-weight: normal;
+		}
+		.checklist input[type=checkbox] + label,
+		.checklist input[type=radio] + label {
+		  display      : inline-block;
+		  margin-left  : -1.5em;
+		  padding-left: 1.5em;
+		  line-height  : 1.7em;
+		  position: relative;
+		  z-index: 99;
+		  opacity: .9;
+		}
+		.checklist input[type=checkbox] + label:before,
+		.checklist input[type=radio] + label:before {
+		  display          : inline-block;
+		  position: absolute;
+		  left: 0;
+		  z-index: -1;
+		  width            : 1em;
+		  content     : '';
+		  width            : 1em;
+		  height           : 1em;
+		  margin           : 0.25em 0.5em 0.25em 0.25em;
+		  border           : 0.0625em solid rgb(115,153,77);
+		  border-radius    : .25em;
+		  background       : rgb(224,224,224);
+		  vertical-align   : bottom;
+		}
+		.checklist input[type=checkbox] + label:before {
+			@include breakpoint(mama-bear) { 
+	  			opacity: 0;
+	  		}
+		}
+		.checklist input[type=radio] + label:before {
+		  border-radius    : 1.5em;
+		}
+		.checklist input[type=radio]:checked + label:before {
+		  background       : rgb(255,255,255);
+		  width: 90%;
+		  height           : 1.25em;
+		  margin           : 0.1em 0.5em 0.25em 0.25em;
+		  border           : 0.0625em solid rgb(153,204,102);
+		}
+		.checklist input[type=checkbox]:checked + label:before {
+		  background       : rgb(255,255,255);
+		  border           : 0.0625em solid rgb(153,204,102);
+		}
+		.checklist input[type=checkbox]:checked + label,
+		.checklist input[type=radio]:checked + label {
+			opacity: 1;
+		}
+		.checklist input[type=checkbox]:checked + label:after {
+		  content     : '✓';
+		  display     : block;
+		  position: absolute;
+		  left: 0.1em;
+		  top: 0.1em;
+		  z-index: 9;
+		  width       : 1em;
+		  color       : $ui-text-color;
+		  font-size   : 1.25em;
+		  line-height : 1em;
+		  text-align  : center;
+		  text-shadow : .01em .01em 0.0714em rgb(255,255,255);
+		  font-weight : bold;
+		  @include breakpoint(mama-bear) { 
+	  		opacity: 0;
+	  	  }
+		}
+		.checklist input[type=radio]:checked + label:after {
+		  display          : block;
+		  content: '';
+		  position: absolute;
+		  left: 0.5em;
+		  top: 0.5em;
+		  z-index: 9;
+		  width            : 0.5em;
+		  height           : 0.5em;
+		  border           : 0.0625em solid rgb(115,153,77);
+		  border-radius    : 1em;
+		  background       : rgb(153,204,102);
+		}
+		.checklist label span {
+			float: none;
+		}
+
+	// Profile Page
+		.payment-settings {
+			margin: -20px -20px 20px -20px;
+			padding: 20px;
+			background: rgba($primary-bg, .5);
+		}
+	// Fancy Dropdowns
+		/* Custom Dropdown Styling */
+		.form-row {
+			.idc-dropdown__select, &.idc_dropdown select {
+			    padding: 13px; /* add some space*/
+			    margin: 0; /* remove default margins */
+			    text-indent: 0;   
+			}
+
+			.idc-dropdown__select--white {
+			    background-color: #fff;
+			    color: #444;
+			}
+
+			// @supports (pointer-events: none) and
+			//       ((-webkit-appearance: none) or
+			//       (-moz-appearance: none) or
+			//       (appearance: none)) {
+
+			    .idc-dropdown, &.idc_dropdown {
+			        position: relative;
+			        display: block;
+			        vertical-align: middle;
+			        width: 100%;
+			    }
+				
+				.idc-dropdown_select, &.idc_dropdown select {
+					  width: 100%;
+					  color: $form-text-color;
+					  font-weight: normal;
+					  font-size: round($text-size/1.4);
+					  line-height: 20px;
+					  margin: 0 0 10px;
+					  padding: 8px 0 5px 8px;
+					  border: 1px solid #e7ebed;
+					  border-radius: 0;
+					  cursor: pointer;
+					  text-indent: 0.01px;
+					  text-overflow: "";
+					  background: url("../images/select-arrow.png") no-repeat 95% 13px #fff;
+					  background-color: #e7ebed;
+					  -webkit-appearance: none;
+					  -moz-appearance: none;
+					  -ms-appearance: none;
+					  appearance: none;
+					  outline: none;
+			}
+
+		    .idc-dropdown.disable_levels:after, .idc-dropdown.disable_levels:before {
+		    	display: none;
+		    }
+		    .idc-dropdown__select[disabled], &.idc_dropdown select[disabled] {
+		        color: rgba(0,0,0,.3);
+		    }
+
+		    .idc-dropdown.idc-dropdown--disabled::after, &.idc_dropdown.idc_dropdown--disabled::after {
+		        color: rgba(0,0,0,.1);
+		    }
+
+		    /* White dropdown style */
+		    .idc-dropdown--white::before {
+		        top: .5em; bottom: .5em;
+		        background-color: #fff;
+		        border-left: 1px solid rgba(0,0,0,.1);
+		    }
+
+		    .idc-dropdown--white::after {
+		        color: rgba(0,0,0,.9);
+		    }
+
+		    /* FF only temp fix */
+		    @-moz-document url-prefix() {
+		        .idc-dropdown__select { padding-right: .9em }
+		        .idc-dropdown--large .idc-dropdown__select { padding-right: 1.3em }
+		        .idc-dropdown--small .idc-dropdown__select { padding-right: .5em }
+		    }
+			// }
+		}
+	}
+}
