@@ -1,0 +1,14 @@
+[
+	{ "code": "USD", "name": "United States Dollar" },
+	{ "code": "AUD", "name": "Australian Dollar" },
+	{ "code": "GBP", "name": "British Pound" },
+	{ "code": "CAD", "name": "Canadian Dollar" },
+	{ "code": "DKK", "name": "Danish Krone" },
+	{ "code": "EUR", "name": "Euro" },
+	{ "code": "JPY", "name": "Japanese Yen" },
+	{ "code": "MXN", "name": "Mexican Peso" },
+	{ "code": "NOK", "name": "Norwegian Krone" },
+	{ "code": "SGD", "name": "Singapore Dollar" },
+	{ "code": "SEK", "name": "Swedish Krona" },
+	{ "code": "CHF", "name": "Swiss Franc" }
+]

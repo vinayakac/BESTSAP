@@ -1,0 +1,97 @@
+.ignitiondeck {
+	// 
+	&.id-widget-wrap {
+		
+	}
+	.id-product-infobox {
+		background: rgba($primary-bg, .6);
+		color: $text-color;
+	}
+// The Progress Bar
+	.progress-wrapper{
+		background: transparent url(images/skyscraper-progressbar.png) repeat-x 0 top;
+		border-bottom: 1px solid #343434;
+	}
+	.progress-bar{
+		background: $pri-accent url(images/skyscraper-progressbar_fill.jpg) repeat-x center;
+	}
+	.progress-percentage{
+		color: #fff;
+	}
+// The Data
+	.id-progress-raised, .id-product-total{
+	   	color: $text-color;
+	}
+	.id-product-funding, .id-product-pledges {
+		color: $alt-text-color;
+	}
+	.id-product-days {
+		color: $text-color;
+	}
+	.id-product-days-to-go {
+		color: $text-color;
+	}
+	.id-product-proposed-end {
+		color: $alt-text-color;
+		font-weight: lighter;
+	}
+	.id-product-description {
+		color: $text-color;
+	}
+// The Button
+	a.main-btn, a.learn-more-button, a.learn-more-button:hover, a.learn-more-button:active {
+		@include border-radius(8px);
+		@include vgradient(lighten($pri-accent, 10%), darken($pri-accent, 10%), 0%, 100%);
+		color: invert($alt-text-color) !important;
+		@include box-shadow(0, 2px, 2px, 0, #333);
+	}
+	a.main-btn:hover, a.main-btn:active {
+		@include vgradient(lighten($pri-accent, 20%), darken($pri-accent, 15%), 0%, 100%);
+		color: invert($text-color) !important;
+		@include box-shadow(0, 2px, 0, 0, #333);
+	}
+// Levels
+	.id-product-levels .level-group {
+		@include transition(all, 200ms, ease-in-out, 0);
+		background: lighten(rgba($secondary-bg, .5), 20%);
+	}
+	.id-product-levels .level-group:hover {
+		background: lighten(rgba($secondary-bg, .7), 30%);
+	}
+
+	.id-product-levels .id-level-title {
+		background: lighten(rgba($secondary-bg, .5), 30%);
+		color: $sec-accent;
+		@include transition(all, 300ms, ease, 0);
+	}
+	.id-product-levels .level-group:hover .id-level-title {
+		background: lighten(rgba($secondary-bg, .5), 40%);
+	}
+	.id-product-levels .id-level-title span {
+		font-weight: lighter;
+		color: invert($alt-text-color);
+	}
+	.id-product-levels .id-level-desc {
+		color: invert($alt-text-color);
+	}
+	.id-product-levels .id-level-desc p {
+		color: invert($alt-text-color);
+	}
+	.id-product-levels .id-level-counts {
+		color: saturate($sec-accent, 10%);
+	}
+// Powered By ID
+	.poweredbyID span a {
+		background: transparent url(images/poweredbyID-bright.png) no-repeat center center;
+		background-size: 136px 39px;
+	}
+// Creator Profile
+	&.id-creatorprofile {
+		color: $text-color;
+		background: rgba($primary-bg, .6);
+		border: none;
+		.id-creator-links a {
+		color: #fff;
+		}
+	}
+}

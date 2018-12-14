@@ -1,0 +1,2 @@
+[20-Sep-2016 11:55:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/suvidhamarriage/public_html/investstartup.in/wp-content/themes/fivehundred/templates/admin/_themeSettings.php on line 45
+[14-Dec-2016 06:33:19 UTC] PHP Warning:  Creating default object from empty value in /home/suvidhamarriage/public_html/investstartup.in/wp-content/plugins/ignitiondeck-crowdfunding/ignitiondeck-admin.php on line 1069

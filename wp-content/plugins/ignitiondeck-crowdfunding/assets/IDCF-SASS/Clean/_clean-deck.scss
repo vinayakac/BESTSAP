@@ -1,0 +1,117 @@
+.ignitiondeck {
+	// 
+	&.id-widget-wrap {
+		
+	}
+	.id-product-infobox {
+		@include vgradient(rgba($sec-accent, .3), rgba($pri-accent, .2), 0%, 100%);
+	}
+// The Progress Bar
+	.progress-wrapper{
+		background: -moz-linear-gradient(top,  rgba(185,185,185,0.5) 0%, rgba(201,201,201,0) 56%, rgba(186,186,186,0.5) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(185,185,185,0.5)), color-stop(56%,rgba(201,201,201,0)), color-stop(100%,rgba(186,186,186,0.5))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(185,185,185,0.5) 0%,rgba(201,201,201,0) 56%,rgba(186,186,186,0.5) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(185,185,185,0.5) 0%,rgba(201,201,201,0) 56%,rgba(186,186,186,0.5) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(185,185,185,0.5) 0%,rgba(201,201,201,0) 56%,rgba(186,186,186,0.5) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(185,185,185,0.5) 0%,rgba(201,201,201,0) 56%,rgba(186,186,186,0.5) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80b9b9b9', endColorstr='#80bababa',GradientType=0 ); /* IE6-9 */
+	}
+	.progress-bar{
+		background: -moz-linear-gradient(top,  rgba(185,185,185,0) 0%, rgba(202,202,202,1) 56%, rgba(186,186,186,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(185,185,185,0)), color-stop(56%,rgba(202,202,202,1)), color-stop(100%,rgba(186,186,186,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(185,185,185,0) 0%,rgba(202,202,202,1) 56%,rgba(186,186,186,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(185,185,185,0) 0%,rgba(202,202,202,1) 56%,rgba(186,186,186,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(185,185,185,0) 0%,rgba(202,202,202,1) 56%,rgba(186,186,186,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(185,185,185,0) 0%,rgba(202,202,202,1) 56%,rgba(186,186,186,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b9b9b9', endColorstr='#00bababa',GradientType=0 ); /* IE6-9 */
+	}
+	.progress-percentage{
+		color: $text-color;
+	}
+// The Data
+	.id-progress-raised, .id-product-total{
+	   	color: $text-color;
+	}
+	.id-product-funding, .id-product-pledges {
+		color: $alt-text-color;
+	}
+	.id-product-days {
+		color: $text-color;
+	}
+	.id-product-days-to-go {
+		color: $text-color;
+	}
+	.id-product-proposed-end {
+		color: $alt-text-color;
+		font-weight: lighter;
+	}
+	.id-product-description {
+		color: $text-color;
+	}
+// The Button
+	a.main-btn {
+		@include border-radius(8px);
+		@include vgradient(saturate($sec-accent, 30%), $sec-accent, 0%, 100%);
+		color: darken($sec-accent, 40%) !important;
+		@include box-shadow(0, 3px, 0, 0, $pri-accent);
+	}
+	a.main-btn:hover, a.main-btn:active {
+		@include vgradient(saturate($sec-accent, 50%), rgba($sec-accent, 1), 0%, 100%);
+		color: darken($sec-accent, 60%) !important;
+		@include box-shadow(0, 1px, 1px, 0, $pri-accent);
+	}
+	a.learn-more-button {
+		@include border-radius(4px);
+		@include vgradient(saturate($sec-accent, 30%), $sec-accent, 0%, 100%);
+		color: darken($sec-accent, 40%) !important;
+		@include box-shadow(0, 3px, 0, 0, $pri-accent);
+	}
+	a.learn-more-button:hover, a.learn-more-button:active {
+		@include vgradient(saturate($sec-accent, 50%), rgba($sec-accent, 1), 0%, 100%);
+		color: darken($sec-accent, 60%) !important;
+	}
+// Levels
+	.id-product-levels a .level-group {
+		@include transition(all, 200ms, ease-in-out, 0);
+		background: lighten(rgba($primary-bg, .5), 50%);
+	}
+	.id-product-levels a .level-group:hover {
+		background: lighten(rgba($primary-bg, .9), 50%);
+	}
+
+	.id-product-levels a .id-level-title {
+		background: rgba($pri-accent, .8);
+		color: #fff;
+		@include transition(all, 300ms, ease, 0);
+	}
+	.id-product-levels a .level-group:hover .id-level-title {
+		background: rgba($pri-accent, 1);
+	}
+	.id-product-levels a .id-level-title span {
+		font-weight: lighter;
+	}
+	.id-product-levels a .id-level-desc {
+		color: $text-color;
+	}
+	.id-product-levels a .id-level-desc p {
+		color: $text-color;
+	}
+	.id-product-levels a .id-level-counts {
+		color: saturate($pri-accent, 30%);
+	}
+
+// Powered By ID
+	.poweredbyID span a {
+		background: transparent url(images/poweredbyID.png) no-repeat center center;
+		background-size: 136px 39px;
+	}
+// Creator Profile
+	&.id-creatorprofile {
+		color: $text-color;
+		@include vgradient(rgba($sec-accent, .3), rgba($pri-accent, .2), 0%, 100%);
+		border: none;
+		.id-creator-links a.facebook, .id-creator-links a.twitter, .id-creator-links a.gplus {
+		color: $primary-bg;
+		}
+	}
+}

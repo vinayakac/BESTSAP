@@ -1,0 +1,222 @@
+// The style for the 2-column with Large Thumbnail Above Download Button Items.
+.memberdeck {
+	.md-2columnThumb, .md-3columnThumb, .md-4columnThumb {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		border: none;
+		width: 100%;
+		span.title {display: none;}
+		li {
+			width: 50%;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			display: inline-block;
+			list-style: none;
+			vertical-align: top;
+			position: relative;
+			float: left;
+			font-size: $text-size - 4;
+			img {
+				width: 100%;
+				height: 100%;
+				max-height: 264px;
+				visibility: hidden;
+			}
+			.idc-dashboard-download-image {
+				display: block;
+				height: 75%;
+				width: 100%;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				margin: 0 0 5% 0;
+			}
+			.tooltip-wrapper {
+				position: absolute;
+				bottom: 40%;
+				left: 50%;
+				transform: translate(-50%);
+				z-index: 1;
+				width: 240px;
+			}
+			.components {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				.info a i {
+					&:hover{
+						color: $font-color;
+					}
+				}
+				.documentation a i {
+					&:hover{
+						color: $font-color;
+					}
+				}
+				.license a i {
+					&:hover{
+						color: $font-color;
+					}
+				}
+			}
+			.expirate_date {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin: 0 5px 0 0;
+			}
+		}
+
+		li a i {
+			font-size: round($text-size - 4);
+			margin: 0 3px;
+			text-decoration: none !important;
+			color: $form-text-color;
+		}
+
+		li button {
+			width: auto;
+			min-width: 70%;
+			max-width: 100%;
+			margin: 5px auto;
+			line-height: round($text-size*1.2);
+			display: block;
+			padding: 8px 8px 6px;
+			clear: both;
+			font-size: 100%;
+   		 @include breakpoint(baby-bear) {
+   			line-height: 1;
+			padding: 4px 4px 4px;
+   	  		}
+		}
+		li button i {
+      	  font-size: $text-size;
+		  float: none;
+		  margin-right: 0;
+		  display: none;
+		  color: #fff;
+    }
+		li a i, li .updatedOn {
+			opacity: .7;
+		}
+		li:hover a i, li:hover .updatedOn:hover{
+			opacity: 1;
+		}
+		.updatedOn {
+			font-size: round($text-size*.7);
+			left: 2px;
+			color: $form-text-color;
+			display: block;
+		}
+		
+	}
+// The style for the nth-column with Medium Thumbnail Above Download Button Items.
+	.md-2columnThumb li {
+			.idc-dashboard-download-image {
+				height: 132px;
+			}
+			&:nth-child(2n+1) {
+				padding-right: 5px;
+			}
+			&:nth-child(2n+2) {
+				padding-left: 5px;
+				padding-right: 0px;
+			}
+	}
+	.md-3columnThumb li {
+			width: 33.3%;
+			.idc-dashboard-download-image {
+				height: 88px;
+			}
+			&:nth-child(3n+1) {
+				padding-right: 5px;
+			}
+			&:nth-child(3n+2) {
+				padding-left: 0;
+				padding-right: 5px;
+				width: 33.4%;
+			}
+			&:nth-child(3n+3) {
+				padding-left: 0px;
+				padding-right: 0px;
+				.expirate_date {
+					margin: 0;
+				}
+			}
+			button {
+				font-size: 90%;
+   	   		 @include breakpoint(baby-bear) {
+   	   			 font-size: 35%; 
+   	   	  		}
+				i {
+					font-size: round($text-size/1.4);
+	   	   		 @include breakpoint(baby-bear) {
+	   	   			 font-size: round($text-size/1.8);
+	   	   	  		}
+				}
+			}
+		  .updatedOn, .info, .documentation, .license {
+				display: none;
+		}
+	}
+	.md-4columnThumb li {
+			width: 25%;
+			.idc-dashboard-download-image {
+				height: 66px;
+			}
+			&:nth-child(4n+1) {
+				padding-right: 5px;
+			}
+			&:nth-child(4n+2) {
+				padding-left: 0px;
+				padding-right: 5px;
+			}
+			&:nth-child(4n+3) {
+				padding-left: 0px;
+				padding-right: 2px;
+				.expirate_date {
+					margin: 0;
+				}
+			}
+			&:nth-child(4n+4) {
+				padding-left: 3px;
+				padding-right: 0px;
+			} 
+			button {
+				font-size: 80%;
+	   		 @include breakpoint(baby-bear) {
+	   			 font-size: 30%; 
+	   	  		}
+				i {
+					font-size: round($text-size/1.8);
+	   	   		 @include breakpoint(baby-bear) {
+	   	   			 font-size: round($text-size/2.8);
+	   	   	  		}
+				}
+			}
+			.expirate_date {
+				font-size: 8px;
+				.renew-link {
+					font-size: 8px;
+				}
+			}
+			.updatedOn, .info, .documentation, .license {
+				display: none;
+		}
+	}
+	.md-2columnThumb.withname .title {
+		display: block;
+		font-size: $text-size;
+	}
+	.md-3columnThumb.withname .title {
+		display: block;
+		font-size: round($text-size*.8);
+	}
+	.md-4columnThumb.withname .title {
+		display: block;
+		font-size: round($text-size*.7);
+	}
+}

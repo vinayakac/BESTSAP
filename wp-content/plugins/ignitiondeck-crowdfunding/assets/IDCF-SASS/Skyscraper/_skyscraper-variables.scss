@@ -1,0 +1,14 @@
+// background colors
+$primary-bg: #adadad;
+$secondary-bg: #f2f2f2;
+$dark-primary-bg: darken($primary-bg, 50%);
+$light-primary-bg: lighten($primary-bg, 50%);
+$invert-bg: invert($primary-bg);
+
+// Skin Accent Colors
+$pri-accent: #444444;
+$sec-accent: #7C1A20;
+
+// text colors
+$text-color: #242424;
+$alt-text-color: #545454;
